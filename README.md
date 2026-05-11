@@ -2,7 +2,7 @@
 my message encryption implementation
 
 ## X25519
-X25519 даёт нам два одинаковых ключа на рзных сторонах. Он сам ассиметричный, а даёт кайфовые симметричные ключи
+X25519 даёт нам два одинаковых ключа на разных сторонах. Он сам ассиметричный, а даёт кайфовые симметричные ключи
 ```python
 from cryptography.hazmat.primitives.asymmetric import x25519
 from cryptography.hazmat.primitives import serialization
@@ -135,7 +135,7 @@ Run:
 uvicorn samples.server:app --port 2002
 ```
 
-# 3. Клиент
+## 3. Клиент
 ```python
 import sys
 import os
